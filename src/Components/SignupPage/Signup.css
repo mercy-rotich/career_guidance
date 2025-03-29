@@ -1,0 +1,242 @@
+:root {
+    --primary: #1E3A8A;
+    --secondary: #0D9488;
+    --accent: #F59E0B;
+    --light-bg: #F8FAFC;
+    --dark-text: #1E293B;
+    --medium-text: #64748B;
+    --light-text: #94A3B8;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .logo-header {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+  
+  .signup-container {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem;
+    margin: 3rem 1rem;
+    
+  }
+  
+  .signup-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .signup-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .signup-header p {
+    color: var(--medium-text);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .signup .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .signup .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .signup .form-row .form-group {
+    flex: 1;
+  }
+  
+  .signup label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+  }
+  
+  .signup input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light-text);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  
+  .signup input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  }
+  
+  .signup .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-top: 0.2rem;
+  }
+  
+  .checkbox-group label {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: var(--medium-text);
+    margin: 0;
+  }
+  
+  .checkbox-group a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .checkbox-group a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .signup-button:hover {
+    background-color: #e08e0b;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: var(--light-text);
+    font-size: 0.875rem;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--light-text);
+    opacity: 0.3;
+  }
+  
+  .divider::before {
+    margin-right: 1rem;
+  }
+  
+  .divider::after {
+    margin-left: 1rem;
+  }
+  
+  .social-signup {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--light-text);
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+  
+  .social-btn:hover {
+    background-color: var(--light-bg);
+    border-color: var(--medium-text);
+  }
+  
+  .login-prompt {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--medium-text);
+  }
+  
+  .login-prompt a {
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  .password-strength {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .strength-bar {
+    height: 0.25rem;
+    flex: 1;
+    background-color: var(--light-text);
+    opacity: 0.3;
+    border-radius: 1rem;
+  }
+  
+  .strength-bar.active {
+    opacity: 1;
+  }
+  
+  .strength-bar.weak {
+    background-color: #EF4444;
+  }
+  
+  .strength-bar.medium {
+    background-color: var(--accent);
+  }
+  
+  .strength-bar.strong {
+    background-color: var(--secondary);
+  }
