@@ -1,0 +1,110 @@
+
+  .navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  /* Add this to your CSS file */
+.navbar, 
+.navbar * {
+  user-select: none;
+}
+
+.navbar a,
+.navbar button {
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+/* Remove the generic cursor pointer from the navbar */
+.navbar {
+  /* Keep all your existing styles, but remove the cursor: pointer; line */
+  cursor: default; /* This sets it back to default instead */
+}
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary); 
+    user-select: none;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    user-select: none;
+    display: block; /* This helps make the entire area clickable */
+  }
+  
+  nav {
+    margin: 0 auto 0 4rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+  }
+  
+  .navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  
+  .login-btn button {
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    border: 1px solid #254195;
+    background: transparent;
+    color: #254195;
+    cursor: pointer;
+    font-weight: 500;
+    min-width: 80px;
+    margin-right: 20px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .user-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+  }
