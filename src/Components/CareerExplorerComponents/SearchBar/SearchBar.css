@@ -1,0 +1,36 @@
+.career-explorer-container{
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-text);
+    width: 75%;
+    margin: auto;
+    height: 100vh;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 4.5rem;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    max-width: 600px;
+  }
+  
+  input[type="search"] {
+    flex: 1;
+    padding: 0.25rem 0.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light-text);
+    font-size: 1rem;
+  }
+  
