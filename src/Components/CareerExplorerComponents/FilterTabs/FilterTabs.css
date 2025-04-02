@@ -1,0 +1,28 @@
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:auto;
+    width: 100%;
+    
+  }
+  
+  .filter-pill {
+    background-color: white;
+    border: 1px solid var(--light-text);
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  .filter-pill:hover{
+    background:  var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  

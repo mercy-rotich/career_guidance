@@ -1,0 +1,25 @@
+.career-explorer-container {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-text);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .career-explorer-container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .career-explorer-container {
+      width: 95%;
+    }
+  }
