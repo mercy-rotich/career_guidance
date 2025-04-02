@@ -41,10 +41,10 @@
   
 .logo {
   font-weight: 700;
-  font-size: 1.2rem; /* Reduced from 1.5rem */
+  font-size: 1.2rem; 
   color: var(--primary);
   user-select: none;
-  margin-right: auto; /* Push logo to left */
+  margin-right: auto; 
 }
   
   .logo a {
@@ -56,15 +56,15 @@
   }
   
   nav {
-    position: absolute; /* Position in center */
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0; /* Remove margin */
+    margin: 0; 
   }
   
   nav ul {
     display: flex;
-    gap: 1.5rem; /* Reduced from 2rem */
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -75,7 +75,10 @@
     color: #333;
     font-weight: 500;
     padding: 0.5rem 0;
-    font-size: 0.9rem; /* Reduced font size */
+    font-size: 0.9rem; 
+  }
+  nav a:hover{
+    color: #254195;
   }
   
   .navbar .active {
@@ -84,7 +87,6 @@
   }
   
   .login-btn {
-    /* Keeping login button visible */
     margin-left: 1rem;
   }
   
@@ -104,20 +106,20 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 1rem; /* Add some space from login button */
-    font-size: 0.9rem; /* Reduced font size */
+    margin-left: 1rem; 
+    font-size: 0.9rem; 
   }
   
   .user-avatar {
-    width: 1.8rem; /* Slightly smaller */
-    height: 1.8rem; /* Slightly smaller */
+    width: 1.8rem; 
+    height: 1.8rem; 
     border-radius: 50%;
-    background-color: #49557e; /* Match the blue color in image */
+    background-color: #49557e; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: 700;
-    font-size: 0.8rem; /* Smaller font for initials */
+    font-size: 0.8rem;
   }
   
