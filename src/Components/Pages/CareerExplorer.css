@@ -10,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.3rem;
+  
 
 
 }
@@ -19,6 +20,8 @@ h1 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
+  margin-left: -8rem;
+  
 
 }
 
