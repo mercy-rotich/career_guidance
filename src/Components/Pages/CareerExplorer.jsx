@@ -5,6 +5,7 @@ import { CareerCategoryList } from '../CareerExplorerComponents/CareerCategoryLi
 
 import { careers } from '../CareerExplorerComponents/careers';
 import { filterCareers } from '../CareerExplorerComponents/FilterCareers';
+import './CareerExplorer.css'
 
 const CareerExplorer = () => {
   const [searchTerm, setSearchTerm] = useState('');

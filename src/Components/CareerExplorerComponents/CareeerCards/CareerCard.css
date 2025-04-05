@@ -4,7 +4,7 @@
     overflow: hidden;
     box-shadow: var(--card-shadow);
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 300px;
+    width: 350px;
     
   }
   
