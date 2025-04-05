@@ -1,0 +1,23 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .no-results h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-results p {
+    color: var(--medium-text);
+  }

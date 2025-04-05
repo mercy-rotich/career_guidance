@@ -1,17 +1,24 @@
-import React from 'react'
-import './SearchBar.css'
+import React, { useState } from 'react';
+import './SearchBar.css';
 
-const SearchBar = () => {
+export const SearchBar = ({ onSearchChange }) => {
+  const [searchValue, setSearchValue] = useState('');
+  
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setSearchValue(value);
+    onSearchChange(value);
+  };
+  
   return (
-    <div className='search-bar'>
-      <div className="page-header">
-        <h1>Career Explorer</h1>
-        <div className="search-container">
-          <input type="search" placeholder="Search careers, skills, or industries..."/>
-        </div>
-      </div>
+    <div className="search-container">
+      <h1>Career Explorer</h1>
+      <input 
+        type="search" 
+        placeholder="Search careers, skills, or industries..." 
+        value={searchValue}
+        onChange={handleInputChange}
+      />
     </div>
-  )
-}
-
-export default SearchBar
+  );
+};
