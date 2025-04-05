@@ -31,6 +31,10 @@
   
   .card-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
   }
   
   .career-title {
@@ -68,7 +72,8 @@
   }
   
   .skills-required {
-    margin-bottom: 1.5rem;
+    margin-bottom: -20px;
+
   }
   
   .skills-title {
@@ -90,11 +95,16 @@
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
+    
   }
   
   .card-actions {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    
+    
   }
   
   .card-action-btn {
